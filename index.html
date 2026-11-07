@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein Name – Portfolio & GitHub Repositories</title>
+    <!-- Tailwind CSS CDN für modernes Design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-lg bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">DeinName.dev</span>
+            <nav class="flex gap-6 text-sm text-slate-400">
+                <a href="#about" class="hover:text-white transition">Über mich</a>
+                <a href="#repos" class="hover:text-white transition">Repositories</a>
+                <a href="#contact" class="hover:text-white transition">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 max-w-4xl mx-auto">
+        <div class="space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium">
+                <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                Verfügbar für Projekte & neue Ideen
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                Hi, ich bin <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Dein Name</span>.
+            </h1>
+            <p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+                Ich entwickle leidenschaftlich gerne Software, entwerfe moderne Webanwendungen und teile meine Open-Source-Projekte auf GitHub.
+            </p>
+            <div class="flex gap-4 pt-2">
+                <a href="#repos" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-600/20">
+                    Repositories ansehen <i class="fa-solid fa-arrow-down ml-1"></i>
+                </a>
+                <a href="https://github.com/dein-benutzername" target="_blank" class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 font-medium text-sm transition flex items-center gap-2">
+                    <i class="fa-brands fa-github"></i> GitHub Profil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repositories Section -->
+    <section id="repos" class="py-20 px-6 max-w-4xl mx-auto border-t border-slate-900">
+        <div class="space-y-2 mb-10">
+            <h2 class="text-2xl font-bold text-white tracking-tight">Ausgewählte Repositories</h2>
+            <p class="text-sm text-slate-400">Ein Auszug meiner wichtigsten Projekte und Arbeiten auf GitHub.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <!-- Repository Karte 1 -->
+            <a href="https://github.com/dein-benutzername/repo-1" target="_blank" class="group p-5 rounded-2xl bg-slate-900/50 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-2 text-indigo-400 font-semibold">
+                            <i class="fa-regular fa-folder-open"></i> repo-name-1
+                        </div>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">TypeScript</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        Eine kurze Beschreibung, was dieses Repository macht, welche Technologien verwendet wurden und warum es nützlich ist.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 text-xs text-slate-500">
+                    <span><i class="fa-regular fa-star mr-1"></i> 12</span>
+                    <span><i class="fa-solid fa-code-fork mr-1"></i> 3</span>
+                </div>
+            </a>
+
+            <!-- Repository Karte 2 -->
+            <a href="https://github.com/dein-benutzername/repo-2" target="_blank" class="group p-5 rounded-2xl bg-slate-900/50 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 transition flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-2 text-indigo-400 font-semibold">
+                            <i class="fa-regular fa-folder-open"></i> repo-name-2
+                        </div>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Python</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        Beschreibung für dein zweites Projekt. Hier kannst du Features oder den Zweck des Tools kurz erklären.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 text-xs text-slate-500">
+                    <span><i class="fa-regular fa-star mr-1"></i> 8</span>
+                    <span><i class="fa-solid fa-code-fork mr-1"></i> 1</span>
+                </div>
+            </a>
+
+            <!-- Füge hier weitere Repositories hinzu, indem du das obige Block-Schema kopierst -->
+
+        </div>
+    </section>
+
+    <!-- Kontakt / Footer -->
+    <footer id="contact" class="py-12 px-6 max-w-4xl mx-auto border-t border-slate-900 text-center text-sm text-slate-500">
+        <p class="mb-4">Lass uns in Verbindung treten!</p>
+        <div class="flex justify-center gap-6 mb-6 text-lg text-slate-400">
+            <a href="https://github.com/dein-benutzername" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/dein-name" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:deine.email@example.com" class="hover:text-white transition"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2026 Dein Name. Erstellt mit GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
